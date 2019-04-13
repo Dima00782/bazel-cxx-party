@@ -15,3 +15,8 @@ before_install:
 script:
 - cd src
 - bazel test //test:unittest
+- bazel coverage --instrumentation_filter=// //test:unittest
+
+after_success:
+- cd bazel-testlogs
+- bash <(curl -s https://codecov.io/bash)
