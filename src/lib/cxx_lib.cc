@@ -5,3 +5,7 @@
 void SayHello() {
     std::cout << "Hi C++ Party" << std::endl;
 }
+
+int Square(int x) {
+    return x * x;
+}
