@@ -18,5 +18,5 @@ script:
 - bazel coverage --instrumentation_filter=// //test:unittest
 
 after_success:
-- cd bazel-testlogs
+- cp bazel-testlogs/test/unittest/coverage.dat .
 - bash <(curl -s https://codecov.io/bash)
