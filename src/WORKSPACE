@@ -36,3 +36,9 @@ http_archive(
         "https://github.com/protocolbuffers/protobuf/archive/v3.7.1.tar.gz",
     ],
 )
+
+git_repository(
+    name = "com_google_benchmark",
+    remote = "https://github.com/google/benchmark",
+    tag = "v1.4.1",
+)

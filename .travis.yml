@@ -16,6 +16,7 @@ script:
 - cd src
 - bazel test //test:unittest
 - bazel coverage --instrumentation_filter=// //test:unittest
+- bazel coverage --instrumentation_filter=// //test:perftest
 
 after_success:
 - cp bazel-testlogs/test/unittest/coverage.dat .
