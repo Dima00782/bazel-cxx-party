@@ -1,0 +1,12 @@
+image:
+  - Ubuntu1804
+
+install:
+  - wget https://github.com/bazelbuild/bazel/releases/download/0.24.0/bazel_0.24.0-linux-x86_64.deb
+  - sudo dpkg -i bazel_0.24.0-linux-x86_64.deb
+build_script:
+- echo Ubuntu build script
+- cd src
+- bazel test //test:unittest
+- bazel coverage --instrumentation_filter=// //test:unittest
+- bazel coverage --instrumentation_filter=// //test:perftest

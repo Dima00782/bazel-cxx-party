@@ -1,2 +1,1 @@
-[![Build Status](https://travis-ci.org/Dima00782/bazel-cxx-party.svg?branch=master)](https://travis-ci.org/Dima00782/bazel-cxx-party)
-[![codecov](https://codecov.io/gh/Dima00782/bazel-cxx-party/branch/master/graph/badge.svg)](https://codecov.io/gh/Dima00782/bazel-cxx-party)
+[![Build status](https://ci.appveyor.com/api/projects/status/xt36io20cip1diww?svg=true)](https://ci.appveyor.com/project/Dima00782/bazel-cxx-party)
